@@ -1,0 +1,55 @@
+*{
+    box-sizing: border-box;
+}
+#h1{
+    text-align: center;
+}
+section{
+    margin: 2px;
+    border: 2px solid rgb(132, 95, 95);
+    border-radius: 4px;
+    padding: 20px;
+    width: 70%;
+}
+.section1{
+    background-color: rgb(111, 156, 196);
+}
+.section2{
+    background-color: rgb(107, 188, 198);
+}
+.section3{
+    background-color: rgb(195, 111, 196);
+}
+@media (min-width:992px)
+{
+.content{
+    margin-left: 100px;
+    display : grid;
+    gap : 20px;
+    grid-template-columns: repeat(3,1fr);
+}
+}
+@media (min-width : 768px) and (max-width:992px)
+{
+    .content{
+        margin-left: 100px;
+        gap : 20px;
+        display : grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .section3{
+        position: relative;
+        top : 70px;
+        width: 170%;
+    }
+    
+}
+@media ( max-width : 767px)
+{
+    .content{
+        display: grid;
+        position: relative;
+        left : 15%;
+        gap : 20px
+    }
+}
